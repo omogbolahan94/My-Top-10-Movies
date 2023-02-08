@@ -8,14 +8,14 @@ import requests
 import os
 
 # TMDB API KEY AND URL
-API_KEY = os.environ.get('TMDB-KEY')   # '13beef30403918a900d954a0d0816299'
-API_URL = 'https://api.themoviedb.org/3/search/movie' # 'https://api.themoviedb.org/3/movie/550?api_key=13beef30403918a900d954a0d0816299'
+API_KEY = os.environ.get('TMDB-KEY')  
+API_URL = 'https://api.themoviedb.org/3/search/movie' 
 
 # FLASK APP
 app = Flask('Top10 Movies')
 
 # configure the Bootstrap with the flask app
-app.config['SECRET_KEY'] = os.environ.get('TOP10-MOVIE-APP-SECRETE-KEY')   #'8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get('TOP10-MOVIE-APP-SECRETE-KEY') 
 Bootstrap(app)
 
 # configure the app with SQLAlchemy
